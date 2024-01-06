@@ -473,6 +473,14 @@ li a:hover {
     text-align: left;
 }
 
+.project-card {
+    transition: transform 0.3s ease; 
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+    border-color: var(--primary-color);
+}
 .project-card h3{
     padding-bottom: 23px;
 }
