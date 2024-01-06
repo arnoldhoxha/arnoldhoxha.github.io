@@ -32,7 +32,6 @@
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#aboutme">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#">Contact</a></li>
             </ul>
             <label class="mode">
                 <input type="checkbox" id="darkModeToggle">
@@ -44,7 +43,7 @@
     <section class="container">
         <div class="main">
             <div class="detail">
-                <h3>Hi, It's Me, Arnold</h3>
+                <h3>Hi,</h3>
                 <h1>I'm <span style="color:#f9532d;"  class="multiText" ></span></h1>
                 <p>Driven by a curiosity for technology and a commitment to continuous learning, 
                   updated with the latest trends and best practices in the Python ecosystem. 
@@ -52,10 +51,15 @@
                    crafting solutions that balance functionality, maintainability, and performance.
                 </p>
                 <div class="social">
-                    <a href="#"><i class='bx bxl-linkedin'></i></a>
-                    <a href="#"><i class='bx bxl-instagram'></i></a>
-                    <a href="#"><i class='bx bxl-github'></i></a>
-                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://www.linkedin.com/in/arnold-hoxha-1b624a29b/"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/__h__arnold__/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://github.com/arnoldhoxha"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.facebook.com/a01di"><i class='bx bxl-facebook-circle'></i></a>
+
+                <button id="downloadButton" 
+                    onclick="downloadCv()">Download My CV
+                </button>
+
                 </div>
             </div>
             <div class="img-sec">
@@ -67,42 +71,77 @@
     </section>
 
     <section class="skill-container" id="aboutme">
-      <div class="main-skills">
-        <div class="main-items">
-          <h3>Thats me </h3>
-            <div class="skills">
-              <div class="skill">
-                  <span class="skill-name">Javascript</span>
+        <div class="main-skills">
+          <div class="main-items">
+            <h3>Programming Skills</h3>
+            <p>
+              My proficiency in these languages, combined with my ability to adapt to 
+              new technologies, enables me to contribute effectively to various 
+              projects. I am committed to staying current with industry trends and
+              continuously enhancing my skills to deliver high-quality and innovative 
+              solutions.
+            </p>
+              <div class="skills">
+                <div class="skill">
+                    <span class="skill-name">Python</span>
+                    <div class="progress-bar" data-progress="80">
+                        <span class="progress-text">80%</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">Javascript</span>
+                    <div class="progress-bar" data-progress="60">
+                        <span class="progress-text">60%</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">Java</span>
+                    <div class="progress-bar" data-progress="40">
+                        <span class="progress-text">40%</span>
+                    </div>
+                </div>
+                <div class="skill">
+                  <span class="skill-name">Bash Scripting</span>
                   <div class="progress-bar" data-progress="80">
                       <span class="progress-text">80%</span>
                   </div>
               </div>
-              <div class="skill">
-                  <span class="skill-name">CSS</span>
-                  <div class="progress-bar" data-progress="70">
-                      <span class="progress-text">70%</span>
-                  </div>
-              </div>
-              <div class="skill">
-                  <span class="skill-name">Python</span>
-                  <div class="progress-bar" data-progress="60">
-                      <span class="progress-text">60%</span>
-                  </div>
-              </div>
-              <div class="skill">
-                <span class="skill-name">Java</span>
-                <div class="progress-bar" data-progress="50">
-                    <span class="progress-text">50%</span>
-                </div>
             </div>
+            <p>
+              In my journey as a software developer, I have adeptly navigated 
+              through a myriad of libraries and frameworks to craft robust and 
+              innovative solutions. In the Python ecosystem, I've harnessed the 
+              power of Flask and Django to build scalable web applications, leveraging 
+              their respective strengths in simplicity and full-stack capabilities. 
+              Jinja, a templating engine, has been instrumental in creating dynamic 
+              and data-driven user interfaces, seamlessly integrated with Flask and 
+              Django projects. On the JavaScript front, I've immersed myself in the
+              world of Node.js for server-side development, propelling the efficiency 
+              and performance of my applications. Embracing modern frontend 
+              technologies, I've employed Next.js and React.js to construct dynamic 
+              and interactive user interfaces, capitalizing on their component-based
+              architecture and efficient rendering. My proficiency extends to 
+              Java Swing, where I've engineered desktop applications with a rich 
+              graphical user interface, demonstrating my versatility across different
+               programming paradigms and technologies. These experiences have not only 
+               broadened my skill set but have also equipped me with the agility to
+                adapt to diverse project requirements and deliver high-quality 
+                solutions.
+            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    
 
-    <section class="section-name" id="projects">
+    <section class="section-projects" id="projects">
         <h2>My projects</h2>
-        <p>This is the content of Section 3.</p>
+        <p>This section is not just a catalog of technologies used but a showcase 
+            of the real-world problems I've addressed and the innovative solutions 
+            I've implemented. Each project entry includes a concise yet comprehensive
+             overview, highlighting the technologies, tools, and methodologies 
+             employed. Additionally, I provide insights into my role and 
+             contributions within each project, emphasizing collaboration,
+              leadership, and technical achievements.</p>
     </section>
 
     <section class="projects">
@@ -153,22 +192,7 @@
     </section>
 
     <footer>
-        <div class="social">
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-        </div>
-    
-        <div class="menu-column">
-            <h3>Explore more</h3>
-            <nav>
-                <a href="#section1">1</a>
-                <a href="#section2">2</a>
-                <a href="#section3">3</a>
-                <a href="#projects">4</a>
-            </nav>
-        </div>
+        <p>&copy; 2023 Arnold. All rights reserved.</p>
     </footer>
     
 </body>

@@ -139,6 +139,70 @@ li a:hover {
     transition: all .3s ease-in-out;
 }
 
+/* Download button CV */
+#downloadButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#downloadButton:hover {
+    background-color: #d8910d;
+    animation: pulse 2s infinite ;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#downloadButton.downloading {
+    animation: pulse 1s infinite;
+}
+@keyframes fill {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+#downloadButton.loading {
+    background-color: #9a321b;
+    position: relative;
+    overflow: hidden;
+}
+
+#downloadButton.loading::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #d29544;
+    width: 0;
+    animation: fill 2s ease-in-out forwards;
+}
+
+/* end  */
+
+
 .main h3 {
     font-size: 1.5rem;
 }
@@ -305,18 +369,29 @@ li a:hover {
     }
 }
 
-.skill-container{
+
+/* skills container  */
+.skill-container {
     padding: 5rem 8% 1rem 8%;
     background-color: rgba(130, 128, 128, 0.112);
 }
-.main-skills{
-    padding-top: 1cap;
+
+.main-skills {
+    padding-top: 1rem;
 }
+
+.main-items p {
+    padding-top: 1rem;
+    font-size: 15px;
+    padding-bottom: 2rem;
+    letter-spacing: 0.6px;
+}
+
 .skills {
     display: flex;
     padding-top: 2rem;
     flex-direction: column;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 }
 
 .skill {
@@ -326,12 +401,9 @@ li a:hover {
 .skill-name {
     font-weight: bold;
     display: inline-block;
-    width: 100px;
     color: #000000;
 }
 
-
-/* projects  */
 .progress-bar {
     position: relative;
     height: 30px;
@@ -356,30 +428,38 @@ li a:hover {
     display: block;
     height: 100%;
     width: 0;
-    background-color: var(--primary-color); /* Set your desired progress bar color */
+    background-color: var(--primary-color); 
     border-radius: 10px;
     transition: width 0.5s ease-in-out;
 }
+
 .progress-bar[data-progress="80"]::before {
     width: 80%;
 }
 
-.progress-bar[data-progress="70"]::before {
-    width: 70%;
+.progress-bar[data-progress="40"]::before {
+    width: 40%;
 }
 
 .progress-bar[data-progress="60"]::before {
     width: 60%;
 }
+
 .progress-bar[data-progress="50"]::before {
     width: 50%;
 }
 
+
+/* project section */
 .projects {
     padding: 4rem 8.4rem 4rem 8.4rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+.projects p{
+    padding-top: 1rem;
+    letter-spacing: .5px;
 }
 
 .project-card {
@@ -403,8 +483,12 @@ li a:hover {
     margin-bottom: 10px;
 }
 
-.section-name{
+/* before project section */
+.section-projects{
     padding: 4rem 8.4rem 0.5rem;
+}
+.section-projects h2{
+    padding-bottom: 1rem;
 }
 
 .tags {
@@ -425,7 +509,8 @@ li a:hover {
 
 /* footer  */
 footer {
-    background-color: #333;
+    box-shadow: 0px -5px 15px rgba(79, 77, 77, 0.277);
+    background-color: var(--primary-dark);
     color: #fff;
     padding: 20px;
     display: flex;
@@ -434,12 +519,8 @@ footer {
     flex-wrap: wrap;
 }
 
-.menu-column {
-    width: 45%;
-    margin-bottom: 20px;
-}
-
-.contact-column h3,
-.menu-column h3 {
-    margin-bottom: 10px;
+.copyright {
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
 }

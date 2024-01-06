@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+
+:root {
+    --primary-color: #f9532d;
+    --primary-dark: #1F252E;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,8 +14,7 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color:var(--primary-dark);
     padding: 20px;
     text-align: center;
 }
@@ -20,13 +27,8 @@ main {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-h1, h2, h3 {
-    color: #e4e2e2;
-}
-
-p {
-    color: #666;
+.title{
+    color: #1a1717;
 }
 
 nav {
@@ -54,13 +56,17 @@ footer {
     margin-top: 20px;
 }
 
-#project-details-container h2 {
+#project-details-container h1 {
     color: #333;
     border-bottom: 2px solid #333;
     padding-bottom: 10px;
 }
 
 #project-details-container p {
-    color: #555;
+    color: #1f1e1e;
     line-height: 1.6;
+}
+
+#project-title{
+    color: var(--primary-color);
 }
