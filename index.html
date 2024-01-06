@@ -9,6 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
+    <script src="projectdetails.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <title>Portfolio</title>
@@ -18,10 +19,10 @@
     <header class="container">
         <div class="page-header">
             <div class="logo">
-                <a href="#">Whoami</a>
+                <a href="#">Arnold</a>
             </div>
             <input type="checkbox" id="click">
-
+        
             <label for="click" class="mainicon">
                 <div class="menu">
                     <i class='bx bx-menu'></i>
@@ -36,7 +37,7 @@
             </ul>
             <label class="mode">
                 <input type="checkbox" id="darkModeToggle">
-                <i class='bx bxs-moon'></i>
+                <i id="iconToggle" class='bx bxs-sun'></i>
             </label>
         </div>
     </header>
@@ -60,7 +61,7 @@
             </div>
             <div class="img-sec">
                 <div class="images">
-                    <img src="myphoto (1).png" alt="" class="img-w">
+                    <img src="img/myphoto (1).png" alt="" class="img-w">
                 </div>
             </div>
         </div>
@@ -106,31 +107,52 @@
     </section>
 
     <section class="projects">
-        <div class="project-card">
-            <img src="https://via.placeholder.com/100" alt="Project 1 Image">
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
-            <a href="#" class="read-more-btn">Read More</a>
+        <div class="project-card" onclick="showProjectDetails(1)">
+            <img src="img/pyproj.png" alt="Project 1 Image">
+            <h3>PyAD</h3>
+            <p>The Python Active Directory Integration Project is a robust solution designed to streamline and enhance the interaction between Python 
+                applications and Microsoft Active Directory environments.</p>
+            <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">JWT</span>
+            </div>
+            <!-- <a href="#" class="read-more-btn">Read More</a> -->
         </div>
 
-        <div class="project-card">
+        <div class="project-card" onclick="showProjectDetails(2)">
             <img src="https://via.placeholder.com/100" alt="Project 1 Image">
             <h3>Project 2</h3>
             <p>Description of Project 2.</p>
-            <a href="#" class="read-more-btn">Read More</a>
+            <div class="tags">
+                <span class="tag">Tag A</span>
+                <span class="tag">Tag B</span>
+                <span class="tag">Tag C</span>
+            </div>
+             
         </div>
-        <div class="project-card">
+        <div class="project-card" onclick="showProjectDetails(3)">
             <img src="https://via.placeholder.com/100" alt="Project 1 Image">
             <h3>Project 1</h3>
             <p>Description of Project 1.</p>
-            <a href="#" class="read-more-btn">Read More</a>
+            <div class="tags">
+                <span class="tag">Tag A</span>
+                <span class="tag">Tag B</span>
+                <span class="tag">Tag C</span>
+            </div>
+             
         </div>
 
-        <div class="project-card">
+        <div class="project-card" onclick="showProjectDetails(4)">
             <img src="https://via.placeholder.com/100" alt="Project 1 Image">
             <h3>Project 2</h3>
             <p>Description of Project 2.</p>
-            <a href="#" class="read-more-btn">Read More</a>
+            <div class="tags">
+                <span class="tag">Tag A</span>
+                <span class="tag">Tag B</span>
+                <span class="tag">Tag C</span>
+            </div>
+             
         </div>
 
     </section>
