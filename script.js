@@ -4,8 +4,9 @@ window.addEventListener('load', (event) => {
     const body = document.body;
     const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
     const bx = document.getElementById('iconToggle');
-
-    if (isDarkMode) {
+    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+   
+    if (isDarkMode && prefersDarkMode) {
         body.classList.add('dark-mode');
         darkModeToggle.checked = true;
     }else{
