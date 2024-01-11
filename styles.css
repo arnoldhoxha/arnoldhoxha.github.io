@@ -100,7 +100,7 @@ li a:hover {
     grid-template-columns: repeat(auto-fit, minmax(277px, 1fr));
     row-gap: 2rem;
     align-items: center;
-    padding-bottom: 8.5rem;
+    padding-bottom: 5rem;
 }
 
 .main h1 {
@@ -116,6 +116,7 @@ li a:hover {
 .social {
     display: flex;
     flex-wrap: wrap;
+    
     gap: 1.4rem;
     margin-top: 1.7rem;
 }
@@ -245,7 +246,9 @@ li a:hover {
         color: var(--primary-color);
         border: 1.6px solid var(--primary-color);
     }
-
+    .tag{
+        color: var(--nav-text);
+    }
     .social a:hover {
         color: var(--primary-dark);
         background-color: var(--primary-color);
@@ -284,11 +287,30 @@ li a:hover {
     .aboutme {
         padding: 0 4.4rem;
     }
+    .progress-text{
+        left: 2%;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .container {
         padding: 0 1.6rem;
+    }
+    .progress-text{
+        left: 8%;
+    }
+    .project-card p{
+        max-width: 100%;
+    }
+    .project-card{
+        width: 80%;
+    }
+    .projects{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+
     }
 }
 
@@ -344,6 +366,7 @@ li a:hover {
     }
     .social{
         position: calc(100%-6.33);
+        justify-content: center;
     }
     .images {
         padding-top: 1rem;
@@ -361,12 +384,20 @@ li a:hover {
 
     .main .multiText {
         font-size: 1.6rem;
-        z-index: 299999;
     }
     .main .detail h1{
         padding-top: 1.5rem;
         font-size: 1.6rem;
     }
+    .project-card{
+        width: 85%;
+    }
+    .progress-text{
+        left: 8%;
+    }
+    /* .img-sec{
+        padding-top: 1rem;
+    } */
 }
 
 
@@ -417,7 +448,7 @@ li a:hover {
 .progress-text {
     position: absolute;
     top: 50%;
-    left: 2%;
+    padding-left: 4%;
     transform: translate(-50%, -50%);
     color: #fff;
     font-size: 14px;
@@ -452,19 +483,24 @@ li a:hover {
 
 /* project section */
 .projects {
-    padding: 4rem 8.4rem 4rem 8.4rem;
+    /* padding: 1rem 8% 1rem 8%; */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    flex-direction: row;
 }
-.projects p{
+.project-card p{
     padding-top: 1rem;
     letter-spacing: .5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .project-card {
+    padding: 4rem;
     cursor: pointer;
-    width: 45%;
+    width: 30%;
     margin: 10px;
     padding: 15px;
     border: 1px solid #ccc;
@@ -493,11 +529,11 @@ li a:hover {
 
 /* before project section */
 .section-projects{
-    padding: 4rem 8.4rem 0.5rem;
+    padding: 5rem 8% 1rem 8%;
 }
-.section-projects h2{
+/* .section-projects h2{
     padding-bottom: 1rem;
-}
+} */
 
 .tags {
     display: flex;
