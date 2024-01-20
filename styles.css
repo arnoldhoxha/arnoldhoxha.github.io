@@ -402,9 +402,14 @@ li a:hover {
         margin-top: 0.1rem;
         margin-bottom: 20px;
     }
-    /* .img-sec{
-        padding-top: 1rem;
-    } */
+    .images{
+        padding-top: 0.2rem;
+    }
+    .images::before{
+        top: 10px;
+       
+    }
+
 }
 
 
