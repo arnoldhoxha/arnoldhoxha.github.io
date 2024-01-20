@@ -290,6 +290,9 @@ li a:hover {
     .progress-text{
         left: 2%;
     }
+    .projects{
+        max-width: 50%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -495,7 +498,7 @@ li a:hover {
 
 /* project section */
 .projects {
-    /* padding: 1rem 8% 1rem 8%; */
+    padding: 2rem 18% 4rem 8%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
