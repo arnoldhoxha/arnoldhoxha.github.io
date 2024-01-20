@@ -395,6 +395,13 @@ li a:hover {
     .progress-text{
         left: 8%;
     }
+    .skill-container{
+       padding: 3rem 8% 1rem 8%;
+    }
+    .section-projects h2 {
+        margin-top: 0.1rem;
+        margin-bottom: 20px;
+    }
     /* .img-sec{
         padding-top: 1rem;
     } */
