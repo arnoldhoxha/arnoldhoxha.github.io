@@ -98,9 +98,8 @@ li a:hover {
 .main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(277px, 1fr));
-    row-gap: 2rem;
     align-items: center;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 
 .main h1 {
@@ -370,10 +369,11 @@ li a:hover {
         justify-content: center;
     }
     .images {
-        padding-top: 1rem;
+        padding-top: 0.1rem;
         width: 100%;
-        margin: auto;
+        
     }
+
 
     .main {
         margin-top: 2rem;
@@ -403,12 +403,8 @@ li a:hover {
         margin-top: 0.1rem;
         margin-bottom: 20px;
     }
-    .images{
-        padding-top: 0.2rem;
-    }
-    .images::before{
-        top: 10px;
-       
+    .img-w{
+        padding-top: 20px;
     }
 
 }
