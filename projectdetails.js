@@ -154,6 +154,6 @@ function loadProjectDetails(projectNumber, projectTitle) {
             break;
         
         default:
-            projectDetailsContainer.innerHTML = `<p>Project details not found.</p>`;
+            projectDetailsContainer.innerHTML = `<p>Project is under development.</p>`;
     }
 }
