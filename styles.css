@@ -540,9 +540,9 @@ li a:hover {
 .section-projects{
     padding: 5rem 8% 1rem 8%;
 }
-/* .section-projects h2{
+.section-projects h2{
     padding-bottom: 1rem;
-} */
+} 
 
 .tags {
     display: flex;
