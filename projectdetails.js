@@ -6,16 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const urlParams = new URLSearchParams(window.location.search);
     const projectNumber = urlParams.get('project');
     const projectCards = document.querySelectorAll('project-card');
-    const projectTitles = [];
+
 
     projectCards.forEach(function (card) {
         const projectTitleElement = card.querySelector('h3');
         const projectTitle = projectTitleElement ? projectTitleElement.textContent : 'se kap';
-        projectTitles.push(projectTitle);
-    });
 
-    console.log(projectTitles);
-    loadProjectDetails(projectNumber, projectTitles[projectNumber - 1]);
+    });
 });
 
 
@@ -90,7 +87,7 @@ function loadProjectDetails(projectNumber, projectTitle) {
             case '2':
                 projectTitleDiv.innerHTML = `
                     <h1>Details for 'Ansible configuration' project</h1>
-                `;
+                `,
                 projectDetailsContainer.innerHTML = `
                 <h1>Deploying docker container with ansible yaml file</h1>
     

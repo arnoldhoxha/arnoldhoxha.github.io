@@ -403,6 +403,9 @@ li a:hover {
         margin-top: 0.1rem;
         margin-bottom: 20px;
     }
+    .section-projects p{
+        text-align: justify;
+    }
     .img-w{
         padding-top: 20px;
     }
@@ -425,6 +428,7 @@ li a:hover {
     font-size: 15px;
     padding-bottom: 2rem;
     letter-spacing: 0.6px;
+    text-align: justify;
 }
 
 .skills {

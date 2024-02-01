@@ -37,40 +37,11 @@ window.addEventListener('load', (event) => {
         backDelay: 1500
     });
 
-    function downloadCv() {
-        const fileUrl = 'https://raw.githubusercontent.com/username/repository/master/filename.ext';
-
-        // Update button state
-        const downloadButton = document.getElementById('downloadButton');
-        downloadButton.classList.add('loading');
-        downloadButton.innerText = 'Downloading...';
-    
-        // Create a temporary link element for the download
-        const downloadLink = document.createElement('a');
-        downloadLink.href = fileUrl;
-        downloadLink.download = 'filename.ext';
-    
-        // Append the link to the body (required for Firefox)
-        document.body.appendChild(downloadLink);
-    
-        // Trigger a click event to start the download
-        downloadLink.click();
-    
-        // Remove the link from the body after the download
-        document.body.removeChild(downloadLink);
-    
-        // Reset button state after a delay
-        setTimeout(() => {
-            downloadButton.classList.remove('loading');
-            downloadButton.innerText = 'Download File';
-        }, 2000);
-    }
-    
-
-
-
-
-
-
 
 });
+
+function downloadCv() {
+    var pageUrl = "https://drive.google.com/file/d/12m3JduRcMYLbE55G347siHG4IhQ15tZA/view";
+
+    window.open(pageUrl, '_blank');
+}
